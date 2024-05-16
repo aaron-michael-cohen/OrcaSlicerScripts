@@ -1,3 +1,11 @@
+# These instructions are from the original fork from Creality Experts.
+I have added my script that enables the Ender-3 V2 Neo image preview in OrcaSlicer 2.0.
+In addition to the original instructions for Prusca slicer given at https://www.crealityexperts.com/enabling-ender-3-v2-neo-model-preview-with-prusaslicer, 
+the thumbnail generator dialog in OrcaSlicer needs to be set to generate 48x48 and 200x200 thumbnail images or the preview does not display (at least on my machine).
+So enter "48x48,200,200" in the Printer Settings, Basic Information, G-code Thumbnails field.
+You also need to enter an executable path to python and the location of the script in the nozzle settings "post-processing script" field.
+-AMC
+
 # Generating gcode preview for Ender-3 V2 Neo
 
 Many 3D printers have firmware that supports displaying an image embedded in gcode files. Unfortunately there isn't a standard format for these embedded images. Different printer models expect different image formats within gcode files. Because of this, there are a handful of scripts that generate these embedded images.
